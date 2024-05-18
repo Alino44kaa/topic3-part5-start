@@ -36,8 +36,12 @@ class ChatActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.button.setOnClickListener {
-            showToast()
+        binding.composeButton.setContent {
+            MaterialTheme {
+                ComposeButton {
+                    showToast()
+                }
+            }
         }
     }
 
